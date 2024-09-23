@@ -10,9 +10,9 @@ The goal of this project is to correctly identify 5 different people in a long s
 - The output of the algorithm are masks representing each person that has been segmented from each image.
 - These segmented people are run through an algorithm that will calculate their likeness to 5 pre-identigied people using the Histogram Comparison method.
 - Using a threshold, we will only keep those top 100 best matches to each of the 5 people.
-- The result is saved in the output folder.
+- The result is saved in the [output](https://github.com/AmyKKiti/OpenCV-Image-Identification-and-Detection/blob/main/output) folder.
 
-More details can be found in the report.
+More details can be found in the [report](https://github.com/AmyKKiti/OpenCV-Image-Identification-and-Detection/blob/main/Output_Results_Report.pdf).
 
 ## Set Up
 
