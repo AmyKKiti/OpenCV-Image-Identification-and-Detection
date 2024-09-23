@@ -3,7 +3,18 @@
 
 This project was tested with Python 3.10.
 
-## Instructions
+## Explanation 
+The goal of this project is to correctly identify 5 different people in a long series of images. The 5 people will be identified using 5 test images given. The algorithm will run through 2 folders of images (cam0 and cam1) and identify each of these 5 people in the set of images.
+
+- First, detection of humans in images have been done using instance segmentation. This method uses convolutional neural networks to effectively detect persons and segment them from the background.
+- The output of the algorithm are masks representing each person that has been segmented from each image.
+- These segmented people are run through an algorithm that will calculate their likeness to 5 pre-identigied people using the Histogram Comparison method.
+- Using a threshold, we will only keep those top 100 best matches to each of the 5 people.
+- The result is saved in the output folder.
+
+More details can be found in the report.
+
+## Set Up
 
 Follow these simple steps to get your local copy up and running.
 
@@ -38,3 +49,4 @@ Follow these simple steps to get your local copy up and running.
 Run the code with `python main.py`
 
 Note about thresholds: If you wish to see all the 831 images for each person, replace all threshold values by zero.
+
